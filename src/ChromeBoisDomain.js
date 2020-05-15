@@ -10,6 +10,13 @@ export default class ChromeBoisDomain extends Component {
      * function that has been provided and is already imported
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
      */
+     const x = event.clientX;
+     const y = event.clientY;
+      render(){
+        return (
+          <a href="#" onMouseMove={this.drawChromeBoiAtCoords(x, y)}>Mouse move</a>
+          )
+      }
   }
   
   /* TODO: Create an event handler which, when fired, invokes the provided
